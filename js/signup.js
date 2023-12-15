@@ -287,10 +287,6 @@ const Validate = (event) => {
   
   var baseUrl = "http://localhost:4000/api/auth/";
   
-  if (error === 0) {
-  
-    newSignup(click);
-  }
   
   
   const submitButton = document.getElementById("submitbutton");
@@ -325,7 +321,7 @@ const Validate = (event) => {
         console.log(data.data.role, ">>>>>>>>>");
         // alert(data.message)
         setTimeout(function () {
-          location.href = "/auth/login.html";
+          location.href = "/auth/index.html";
         }, 500);
       }
     } catch (error) {
