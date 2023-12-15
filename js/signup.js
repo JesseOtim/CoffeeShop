@@ -289,7 +289,7 @@ const Validate = (event) => {
   
   if (error === 0) {
   
-    newLogin(click);
+    newSignup(click);
   }
   
   
@@ -332,4 +332,61 @@ const Validate = (event) => {
       console.log(error);
     }
   }
+  
+  // var baseUrl = "http://localhost:4000/api/auth/";
+
+  // const submitButton = document.getElementById("submitbutton");
+  // submitButton.addEventListener("click", (event) => {
+  //   const error = Validate(event);
+  
+  //   if (error === 0) {
+  //     newSignup(event);
+  //   }
+  // });
+  
+  // async function newSignup(event) {
+  //   event.preventDefault();
+  //   let firstname = document.getElementById("firstname").value;
+  //   let lastname = document.getElementById("lastname").value;
+  //   let email = document.getElementById("email").value;
+  //   let password = document.getElementById("password").value;
+  //   let confirmpassword = document.getElementById("confirmpassword").value;
+  
+  //   try {
+  //     console.log(email);
+  //     const response = await fetch(baseUrl + "signup", {
+  //       method: "POST",
+  //       headers: {
+  //         "content-type": "application/json",
+  //       },
+  //       mode: "cors",
+  //       body: JSON.stringify({
+  //         firstname: firstname,
+  //         lastname: lastname,
+  //         email: email,
+  //         password: password,
+  //         confirmpassword: confirmpassword,
+  //       }),
+  //     });
+  //     const data = await response.json();
+  //     if (data.status == 200) {
+  //       console.log(data.data.role, ">>>>>>>>>");
+  //       // alert(data.message)
+  //       setTimeout(function () {
+  //         location.href = "/auth/login.html";
+  //       }, 500);
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
+  
+  // function Validate(event) {
+  //   let error = 0;
+  
+  //   event.preventDefault();
+  //   // Rest of your validation code...
+  
+  //   return error;
+  // }
   
