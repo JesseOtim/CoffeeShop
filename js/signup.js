@@ -317,7 +317,7 @@ const Validate = (event) => {
         }),
       });
       const data = await response.json();
-      if (data.status == 200) {
+      if (data.status == 201) {
         console.log(data.data.role, ">>>>>>>>>");
         // alert(data.message)
         setTimeout(function () {
